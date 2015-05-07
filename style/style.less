@@ -1,6 +1,6 @@
 @site-blue: #47bfff;
-@large-size: 1060px;
-@small-size: 670px;
+@mid-size: 1075px;
+@small-size: 690px;
 
 body{
     font-size: 14px;
@@ -17,20 +17,20 @@ h1{
 
 header{
     background: @site-blue;
-    position: absolute;
+    position: fixed;
     height: 100px; 
-    @media(max-width:@small-size){
-        height: 150px;
-    }
+    @media(max-width:@mid-size){ height: 150px; }
+    
     
     left:0;
     top: 0;
     width: 100%;
+    z-index: 10;
     
     #divTitle{   
         margin: 0 auto;
         width: 100%;
-        @media(min-width:@large-size){
+        @media(min-width:@mid-size){
             margin: 10px;
             float:left;
             width: 700px;            
@@ -46,13 +46,12 @@ header{
         border-spacing: 10px;
         width:300px;
         margin: 0 auto;
-        @media(min-width:@large-size){
+        @media(min-width:@mid-size){
             margin: 20px;
             float:right;
         }
         
-        div{
-            //
+        .active{
             font-family: "Varela Round";
             color:white;
             width:90px;
@@ -63,22 +62,32 @@ header{
             text-align: center;
             border-radius: 20px;
             border: 2px solid white;
-            
+            text-decoration: none;
+           
             &:hover{
                 color: @site-blue;
                 background: white;
                 cursor: pointer;
             }
         }
-    }
+        
+        .inactive{
+            font-family: "Varela Round";
+            width:90px;
+            height: 35px;            
+            color: white;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            border-radius: 20px;            
+            background: @site-blue;
+            text-decoration: none;
+        }
+    }    
 }
 
 #content{
     position: relative;
     top: 160px;
 }
-
-
-
-
 

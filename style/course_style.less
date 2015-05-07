@@ -1,4 +1,6 @@
 @site-blue: #47bfff;
+@mid-size: 1075px;
+@small-size: 690px;
 
 
 .row{
@@ -15,38 +17,38 @@
             //background: yellow;
             display: table-cell;
             text-align: center;
+            vertical-align: middle;
         }
     
         .topic{
             width: 60%;
-            //background: green;
+            vertical-align: middle;
             display: table-cell;
         }
     
-        .homework{
-            width:12%;
-            padding:3px;
-            background: @site-blue;
-            display: table-cell;
-            text-align: center;
+        .action{
+            padding:3px;       
             font-size: 0.75em;            
             color:white;
-            
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            background: @site-blue;            
+            text-decoration: none;
+            width: 5%;
+            border-radius: 500px;
             &:hover{
+                background:darken(@site-blue,20%);
                 color: black;
-                background:lighten(white,20%);
-                border: 1px dashed black;
                 cursor: pointer;
             }
+            
+            img{
+                width:20px;
+                margin-top: 5px;                
+            }
         }
-    
-        .icon{
-            width:10%;
-            height:10%;
-            background: url("../img/play.png") no-repeat;
-            display: table-cell;
-        }
-    
+            
     &:hover{
         background: lighten(@site-blue,30%);
     }
