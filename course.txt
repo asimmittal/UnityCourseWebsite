@@ -1,0 +1,146 @@
+{
+	"items" : [
+		{
+			"date": "9 Jan 2015",
+			"topic": "Introduction",
+			"topic_url": "week1/course_intro/index.html",
+			"homework_url": null,
+			"due_date": ""
+		},
+
+		{
+			"date": "16 Jan 2015",
+			"topic": "Unity Fundamentals",
+			"topic_url": "week2/unity_fundamentals/index.html",
+            "hw_index": 1,
+			"homework_url": "week2/hw/hw1.docx",
+			"due_date": "22 Jan 2015"
+		},
+
+		{
+			"date": "23 Jan 2015",
+			"topic": "Scripting",
+			"topic_url": "week3/scripting/index.html",
+            "hw_index": 2,
+			"homework_url": "week3/hw/hw2.docx",
+			"due_date": "29 Jan 2015"
+		},
+
+		{
+			"date": "30 Jan 2015",
+			"topic": "Prefabs & Physics",
+			"topic_url": "week4/prefabs_physics/index.html",
+            "hw_index": 3,
+			"homework_url": "week4/hw/hw3.docx",
+			"due_date": "5 Feb 2015"
+		},
+
+		{
+			"date": "6 Feb 2015",
+			"topic": "Interscript Actions",
+			"topic_url": "week5/interscript_actions/index.html",
+            "hw_index": 4,
+			"homework_url": "week5/hw/hw4.docx",
+			"due_date": "12 Feb 2015"
+		},
+
+		{
+			"date": "13 Feb 2015",
+			"topic": "First Game",
+			"topic_url": "week6/first_game.docx",
+            "hw_index": 5,
+			"homework_url": "week6/first_game.docx",
+			"due_date": "19 Feb 2015"
+		},
+
+		{
+			"date": "20 Feb 2015",
+			"topic": "Materials & Audio",
+			"topic_url": "week7/materials_audio/index.html",
+            "hw_index": 6,
+			"homework_url": "week7/hw/hw6.docx",
+			"due_date": "26 Feb 2015"
+		},
+
+		{
+			"date": "27 Feb 2015",
+			"topic": "Raycasting  & Events",
+			"topic_url": "week8/raycasting_events/index.html",
+            "hw_index": 7,
+			"homework_url": "week8/hw/hw7.docx",
+			"due_date": "5 Mar 2015"
+		},
+
+		{
+			"date": "6 Mar 2015",
+			"topic": "<b>Midterm Exam</b> [Study Guide]",
+			"topic_url": "midterm_studyguide.docx",
+            "hw_index": 8,
+			"homework_url": null,
+			"due_date": ""
+		},
+
+		{
+			"date": "13 Mar 2015",
+			"topic": "<b>Spring Break</b>",
+			"topic_url": null,
+            "hw_index": 8,
+			"homework_url": null,
+			"due_date": ""
+		},
+        
+        {
+			"date": "19 Mar 2015",
+			"topic": "FSMs and Coroutines",
+			"topic_url": "week11/fsm_coroutines/index.html",
+            "hw_index": 8,
+			"homework_url": "week11/hw/hw8.docx",
+			"due_date": "26 Mar 2015"
+		},
+        
+        {
+			"date": "26 Mar 2015",
+			"topic": "Mecanim Animation Basics",
+			"topic_url": "week12/Mecanim_intro.pptx",
+            "hw_index": 9,
+			"homework_url": "week12/hw9.docx",
+			"due_date": "2 Apr 2015"
+		},
+        
+        {
+			"date": "2 Apr 2015",
+			"topic": "2D Tutorial [External]",
+			"topic_url": "http://unity3d.com/learn/tutorials/modules/beginner/2d/2d-controllers",
+            "hw_index": 10,
+			"homework_url": "week13/hw10.docx",
+			"due_date": "9 Apr 2015"
+		},
+
+		{
+			"date": "9 Apr 2015",
+			"topic": "Tweening, NGUI, and Deployment",
+			"topic_url": "week14/tweening_ngui_deployment/index.html",
+            "hw_index": 11,
+			"homework_url": "week14/hw11.docx",
+			"due_date": "16 Apr 2015"
+		},
+
+		{
+			"date": "23 Apr 2015",
+			"topic": "Final Project Work",
+			"topic_url": "",
+            "hw_index": 11,
+			"homework_url": null,
+			"due_date": ""
+		},
+
+		{
+			"date": "30 Apr 2015",
+			"topic": "Final Project Work",
+			"topic_url": "",
+            "hw_index": 12,
+			"homework_url": "final_project.docx",
+			"due_date": ""
+		}
+	]
+}
