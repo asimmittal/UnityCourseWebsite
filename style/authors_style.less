@@ -1,0 +1,55 @@
+@site-blue: #47bfff;
+@mid-size: 1075px;
+@small-size: 690px;
+
+#content{
+    margin: 0 auto;
+    width: 75%;
+    padding: 5px;
+    display: table;
+    border-spacing: 20px;
+    
+    .authorInfoCard{
+        height: 300px;        
+        width: 300px;
+        padding: 15px;
+        display:table-cell;
+        @media(max-width:@mid-size){display:table-row;}
+        
+        .imgContainer{
+            background:@site-blue;
+            height: 300px; @media(max-width:@mid-size){height:200px;}
+            width: 300px; @media(max-width:@mid-size){width:200px;}
+            margin: 0 auto;
+            border: 6px solid @site-blue;
+            border-radius: 600px;
+            background-size: cover;
+        }
+        
+        .authorName{
+            margin: 0 auto;
+            text-align: center;
+            margin-top: -15px;
+            font-family: "Varela Round";
+            font-size: 1.6em;            
+        }
+        
+        .authorContact{
+            margin: 0 auto;
+            text-align: center;
+            font-family: "Varela Round";
+            font-size: 1.2em;
+            margin-top: -25px;
+        }
+        
+        .authorBio{
+            font-family: "Anaheim";
+            text-align: center;
+            font-size: 1.2em;
+            padding: 0px 70px 0px 70px; @media(max-width:@mid-size){padding: 0px 30px 0px 30px;}
+        }
+    }
+    
+    #matt{background-image: url("../img/matt_square.jpg");}
+    #asim{background-image: url("../img/asim_square.jpg");}            
+}
