@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- google web fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Varela%20Round&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Anaheim&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+                
+        <!-- jquery -->
+        <script src="lib/jquery-1.11.2.min.js"></script>
+        <script src="lib/handlebars-v3.0.3.js"></script>
+        
+        <!-- bootstrap
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+            
+        <!-- less scripts 
+        <link rel="stylesheet/less" type="text/css" href="style/style.less">
+        <link rel="stylesheet/less" type="text/css" href="style/game_style.less">
+        <script src="lib/less.min.js"></script>   -->
+        
+        <!-- my scripts -->
+        <script src="scripts/game.js"></script>
+        
+        <!-- compiled css -->
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="style/game_style.css">
+        
+        <!-- iframe adjust script -->
+        <script language="javascript" type="text/javascript">
+            function resizeIframe(obj) {
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+            }
+        </script>
+        
+    </head>
+    
+    <body>
+        <!-- default page header -->
+        <header>
+            <div id="divTitle"><h1>Video Game Programming with Unity3D</h1></div>
+            <div id="divActions">
+                <a class="active" href="showcase.html">Showcase</a>
+                <a class="active" href="index.html">Course</a>
+                <a class="active" href="authors.html">Authors</a>
+            </div>
+        </header>
+        
+        <div id="content"> 
+            <div id="gameFrame">
+                <iframe src="" frameborder="0" scrolling="no" id="iframe" onload='javascript:resizeIframe(this);'></iframe>
+                <div id="helpInfo">
+                    <h2 id="gameTitle">Game title</h1>
+                    <p id="credits">by Author A, Author B</p>
+                    
+                    <h2>Instructions</h2>
+                    <p id="help">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting 
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since 
+                        the 1500s, when an unknown printer took a galley of type and scrambled it 
+                        to make a type specimen book.
+                        <br><br>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting 
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since 
+                        the 1500s, when an unknown printer took a galley of type and scrambled it 
+                        to make a type specimen book.                        
+                    </p>
+                    
+                    <a id="backLink" href="showcase.html">&lt; Back to Showcase </a>
+                </div>
+            </div>
+        </div>            
+    </body>
+</html>

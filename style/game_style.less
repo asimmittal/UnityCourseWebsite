@@ -1,0 +1,48 @@
+@site-blue: #47bfff;
+@mid-size: 1075px;
+@small-size: 690px;
+
+#content{
+    width: 85%;
+    margin: 0 auto;
+    height: 700px;
+    
+    h1, h2{ font-family: "Anaheim"; }
+}
+
+
+#gameFrame{
+    width: 100%;
+    height: 70%;
+    
+    iframe{
+        width: 75%;
+        float:left;
+        margin: 5px;
+    }
+    
+    #helpInfo{
+        width: 20%;
+        float:left;
+        margin-top: 30px;
+        font-family: "Anaheim";
+    }
+    
+    #credits, #help{
+        margin-top: -15px;
+    }
+    
+    #backLink{
+        color: @site-blue;
+        text-decoration: none;
+        padding: 5px;
+        font-weight: bold;
+        margin-top: 50px;
+        font-size: 1.3em;
+        border-radius: 4px;
+        &:hover{
+            background: @site-blue;
+            color:white;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- google web fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Varela%20Round&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Anaheim&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+                
+        <!-- jquery -->
+        <script src="lib/jquery-1.11.2.min.js"></script>
+        <script src="lib/handlebars-v3.0.3.js"></script>
+        
+        <!-- bootstrap
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+            
+        <!-- less scripts 
+        <link rel="stylesheet/less" type="text/css" href="style/style.less">
+        <link rel="stylesheet/less" type="text/css" href="style/showcase_style.less">
+        <script src="lib/less.min.js"></script>   -->
+        
+        <!-- my scripts -->
+        <script src="scripts/showcase.js"></script>
+        
+        <!-- compiled css -->
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="style/showcase_style.css">
+
+    </head>
+    
+    <body>
+        <!-- default page header -->
+        <header>
+            <div id="divTitle"><h1>Video Game Programming with Unity3D</h1></div>
+            <div id="divActions">
+                <a class="inactive" >Showcase</a>
+                <a class="active" href="index.html">Course</a>
+                <a class="active" href="authors.html">Authors</a>
+            </div>
+        </header>
+        
+        <div id="content">
+            <!-- template for a single show case item -->
+            <script id="showcase-item-template" type="text/x-handlebars-template">
+                <div class="showcase-cell" style="visibility:{{visibility}}" onclick="{{handler}}">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>{{title}}</span>
+                                    <br>by
+                                    <br>{{credits}}</br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </script>
+            
+            <!-- Each row in the showcase, can show upto three items -->
+            <script id="showcase-row-template" type="text/x-handlebars-template">
+                <div class="showcase-row">%</div>    
+            </script>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:52987/showcase.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <!-- google web fonts -->
+        <link href="./showcase_files/css" rel="stylesheet" type="text/css">
+        <link href="./showcase_files/css(1)" rel="stylesheet" type="text/css">
+                
+        <!-- jquery -->
+        <script src="./showcase_files/jquery-1.11.2.min.js"></script>
+        <script src="./showcase_files/handlebars-v3.0.3.js"></script>
+        
+        <!-- bootstrap
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+            
+        <!-- less scripts -->
+        <link rel="stylesheet/less" type="text/css" href="./showcase_files/style.less"><style type="text/css" id="less:style-style">body {
+  font-size: 14px;
+  min-width: 468px;
+}
+@media (max-width: 690px) {
+  body {
+    font-size: 12px;
+  }
+}
+h1 {
+  font-family: "Varela Round";
+  font-size: 2.5em;
+}
+header {
+  background: #47bfff;
+  position: fixed;
+  height: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+@media (max-width: 1075px) {
+  header {
+    height: 150px;
+  }
+}
+header #divTitle {
+  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 1075px) {
+  header #divTitle {
+    margin: 10px;
+    float: left;
+    width: 700px;
+  }
+}
+header #divTitle h1 {
+  color: white;
+  text-align: center;
+}
+header #divActions {
+  border-spacing: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+@media (min-width: 1075px) {
+  header #divActions {
+    margin: 20px;
+    float: right;
+  }
+}
+header #divActions .active {
+  font-family: "Varela Round";
+  color: white;
+  width: 90px;
+  height: 35px;
+  background: #47bfff;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid white;
+  text-decoration: none;
+}
+header #divActions .active:hover {
+  color: #47bfff;
+  background: white;
+  cursor: pointer;
+}
+header #divActions .inactive {
+  font-family: "Varela Round";
+  width: 90px;
+  height: 35px;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 20px;
+  background: #47bfff;
+  text-decoration: none;
+}
+#content {
+  position: relative;
+  top: 90px;
+}
+@media (max-width: 1075px) {
+  #content {
+    top: 150px;
+  }
+}
+</style>
+        <link rel="stylesheet/less" type="text/css" href="./showcase_files/showcase_style.less"><style type="text/css" id="less:style-showcase_style">.showcase-row {
+  width: 100%;
+  display: table;
+  border-spacing: 5px;
+}
+.showcase-cell {
+  display: table-cell;
+  padding: 5px;
+}
+@media (max-width: 1075px) {
+  .showcase-cell {
+    display: table-row;
+  }
+}
+#content {
+  margin: 0 auto;
+  width: 1080px;
+}
+@media (max-width: 1075px) {
+  #content {
+    width: 95%;
+  }
+}
+.item-content {
+  vertical-align: middle;
+  background: url("http://127.0.0.1:52987/img/placeholder.jpg") no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 340px;
+  margin: 0 auto;
+}
+.item-cover {
+  background-color: rgba(71, 191, 255, 0.6);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: relative;
+  display: table;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+.item-cover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.item-cover div {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Anaheim";
+}
+.item-cover div span {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+</style>
+        <script src="./showcase_files/less.min.js"></script>   
+        
+        <!-- my scripts -->
+        <script src="./showcase_files/showcase.js"></script>
+
+    </head>
+    
+    <body>
+        <!-- default page header -->
+        <header>
+            <div id="divTitle"><h1>Video Game Programming with Unity3D</h1></div>
+            <div id="divActions">
+                <a class="inactive">Showcase</a>
+                <a class="active" href="http://127.0.0.1:52987/index.html">Course</a>
+                <a class="active" href="http://127.0.0.1:52987/authors.html">Authors</a>
+            </div>
+        </header>
+        
+        <div id="content">
+            <!-- template for a single show case item -->
+            <script id="showcase-item-template" type="text/x-handlebars-template">
+                <div class="showcase-cell" style="visibility:{{visibility}}" onclick="{{handler}}">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>{{title}}</span>
+                                    <br>by
+                                    <br>{{credits}}</br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </script>
+            
+            <!-- Each row in the showcase, can show upto three items -->
+            <script id="showcase-row-template" type="text/x-handlebars-template">
+                <div class="showcase-row">%</div>    
+            </script>
+        
+                <div class="showcase-row">
+                <div class="showcase-cell" style="visibility:" onclick="handle(0)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 1</span>
+                                    <br>by
+                                    <br>Author A, Author B<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            
+                <div class="showcase-cell" style="visibility:" onclick="handle(1)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 2</span>
+                                    <br>by
+                                    <br>Author C, Author D<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            
+                <div class="showcase-cell" style="visibility:" onclick="handle(2)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 3</span>
+                                    <br>by
+                                    <br>Author E, Author F<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>    
+            
+                <div class="showcase-row">
+                <div class="showcase-cell" style="visibility:" onclick="handle(3)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 4</span>
+                                    <br>by
+                                    <br>Author G, Author H<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            
+                <div class="showcase-cell" style="visibility:" onclick="handle(4)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 5</span>
+                                    <br>by
+                                    <br>Author I, Author J<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            
+                <div class="showcase-cell" style="visibility:" onclick="handle(5)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 6</span>
+                                    <br>by
+                                    <br>Author A, Author B<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>    
+            
+                <div class="showcase-row">
+                <div class="showcase-cell" style="visibility:" onclick="handle(6)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 7</span>
+                                    <br>by
+                                    <br>Author C, Author D<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            
+                <div class="showcase-cell" style="visibility:" onclick="handle(7)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 8</span>
+                                    <br>by
+                                    <br>Author E, Author F<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            
+                <div class="showcase-cell" style="visibility:" onclick="handle(8)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 9</span>
+                                    <br>by
+                                    <br>Author G, Author H<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>    
+            
+                <div class="showcase-row">
+                <div class="showcase-cell" style="visibility:" onclick="handle(9)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 10</span>
+                                    <br>by
+                                    <br>Author I, Author J<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            
+                <div class="showcase-cell" style="visibility:hidden" onclick="handle(9)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 10</span>
+                                    <br>by
+                                    <br>Author I, Author J<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            
+                <div class="showcase-cell" style="visibility:hidden" onclick="handle(9)">
+                    <div class="item-content">
+                        <div class="item-cover">
+                            <div>
+                                <p>
+                                    <span>Game Title 10</span>
+                                    <br>by
+                                    <br>Author I, Author J<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>    
+            </div>
+        
+    
+</body></html>
