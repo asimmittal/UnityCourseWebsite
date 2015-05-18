@@ -26,13 +26,6 @@
         <link rel="stylesheet" type="text/css" href="style/style.css">
         <link rel="stylesheet" type="text/css" href="style/game_style.css">
         
-        <!-- iframe adjust script -->
-        <script language="javascript" type="text/javascript">
-            function resizeIframe(obj) {
-                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-            }
-        </script>
-        
     </head>
     
     <body>
@@ -48,7 +41,7 @@
         
         <div id="content"> 
             <div id="gameFrame">
-                <iframe src="" frameborder="0" scrolling="no" id="iframe" onload='javascript:resizeIframe(this);'></iframe>
+                <iframe src="" frameborder="0" scrolling="no" id="iframe" width="960" height="800"></iframe>
                 <div id="helpInfo">
                     <h2 id="gameTitle">Game title</h1>
                     <p id="credits">by Author A, Author B</p>

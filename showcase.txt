@@ -1,83 +1,35 @@
 {
     "items":    [
         {
-            "title": "Game Title 1",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author A, Author B",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+            "title": "Adrenaline",
+            "image": "http://ww2.cs.fsu.edu/~small/showcase/Adrenaline/preview.jpg",
+            "credits": "Madeline Richards, Zach Ivanac",
+            "url": "http://ww2.cs.fsu.edu/~small/showcase/Adrenaline/Build.html",
+            "help": "http://asimmittal.net/temp/info.json?jsoncallback=?"
         },
 
         {
-            "title": "Game Title 2",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author C, Author D",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+            "title": "Berk",
+            "image": "http://ww2.cs.fsu.edu/~small/showcase/Berk/preview.jpg",
+            "credits": "Erik C. Godreau, Kelly A. Larkin",
+            "url": "http://ww2.cs.fsu.edu/~small/showcase/Berk/Build.html",
+            "help": "http://asimmittal.net/temp/info.json?jsoncallback=?"
+        },
+
+		{
+            "title": "Arrow Armageddon",
+            "image": "http://ww2.cs.fsu.edu/~small/showcase/ArrowArmageddon/preview.jpg",
+            "credits": "Trevor Richardson",
+            "url": "http://ww2.cs.fsu.edu/~small/showcase/ArrowArmageddon/Build.html",
+            "help": "http://asimmittal.net/temp/info.json?jsoncallback=?"
         },
 
         {
-            "title": "Game Title 3",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author E, Author F",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-        },
-
-        {
-            "title": "Game Title 4",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author G, Author H",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-        },
-
-        {
-            "title": "Game Title 5",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author I, Author J",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-        },
-        {
-            "title": "Game Title 6",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author A, Author B",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-        },
-
-        {
-            "title": "Game Title 7",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author C, Author D",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-        },
-
-        {
-            "title": "Game Title 8",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author E, Author F",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-        },
-
-        {
-            "title": "Game Title 9",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author G, Author H",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-        },
-
-        {
-            "title": "Game Title 10",
-            "image": "/img/placeholder.jpg",
-            "credits": "Author I, Author J",
-            "url": "/showcase/asim/myGame_web.html",
-            "help": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+            "title": "Super Space Battleship",
+            "image": "http://ww2.cs.fsu.edu/~small/showcase/Battleship/preview.jpg",
+            "credits": "Peter Krause, Jeffrey Kuang",
+            "url": "http://ww2.cs.fsu.edu/~small/showcase/Battleship/Build.html",
+            "help": "http://asimmittal.net/temp/info.json?jsoncallback=?"
         }
-
     ]
 }
